@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Tugas Uprak TIk</title>
+
+<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+
+
+	* {
+		margin: 0;
+		padding: 0;
+		color: #22333B;
+		box-sizing: border-box;
+	}
+
+	.bg {
+		background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+		width: 2500px;
+		height:2000px;
+		background-size: cover;
+		position: fixed;
+		background-repeat: no-repeat;
+		filter: brightness(0.4) blur(10px);
+		z-index: -1;
+	}
+
+	.container {
+		width: 80%;
+		transform: translateY(100px);
+		margin: auto;
+		padding: 40px;
+		background-color: rgba(256, 256, 256, 0.4);
+		box-shadow: 5px 5px 10px rgba(256, 256, 256, 0.4);
+	}
+
+	.container1 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.header {
+	width: 100%;
+	height: 100px;
+	/*background-color: #5f9ea0;*/
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 10%;
+	position: fixed;
+	z-index: 1;
+
+	}
+
+	h1 {
+		font-family: 'Roboto Slab', serif;
+		text-align: center;
+		font-weight: 600;
+		font-size: 40px;
+		transform: translateY(20px);
+
+	}
+
+	h2 {
+		font-family: 'Roboto Slab', serif;
+		text-align: center;
+		font-weight: 600;
+		font-size: 35px;
+		transform: translateY(10px);
+
+	}
+
+	p {
+		font-family: 'Roboto Slab', serif;
+		font-size: 25px;
+
+	}
+
+	h3 {
+		font-family: 'Roboto Slab', serif;
+		font-weight: 600;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	h4 {
+		font-family: 'Roboto Slab', serif;
+		font-weight: 600;
+		font-size: 25px;
+		text-align: center;
+	}
+
+
+	.g1 {
+		display: block;
+		margin: auto;
+		width: 70%;
+	}
+
+	.g2 {
+		display: block;
+		margin: auto;
+		width: 40%;
+	}
+
+	.gg {
+		width: 20%;
+	}
+
+	.kotakgambar {
+		width: 100%;
+		/*background-color: white;*/
+		display: flex;
+		align-items: center;	
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	a {
+		font-family: 'Roboto Slab', serif;
+		font-size: 35px;
+		font-weight: 500;
+		text-decoration: none;
+		color: black;
+	}
+
+	button {
+
+	transition: 1s;
+	padding: 7px;
+	background-color: transparent;
+	border-radius: 10%;
+	transition: 0.3s ease;
+	border: 1px solid white;
+	display: block;
+	margin: auto;
+	}
+
+	button:hover{
+	background-color:rgba(256, 256, 256, 0.5);
+	cursor: pointer;
+	transition: 0.3s ease;
+	}
+
+	.header {
+	width: 100%;
+	height: 100px;
+	/*background-color: #5f9ea0;*/
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 10%;
+	position: fixed;
+	z-index: 1;
+
+	}
+
+	li, a, button {
+	font-family: 'Kaisei HarunoUmi', serif;
+	font-weight: 650;
+	font-size: 17px;
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	}
+
+	.navlink li {
+
+		display: inline-block;
+		padding: 10px;
+		transition: 0.3s ease;
+	}
+
+	.navlink li a{
+
+		margin-right: 7px;
+		transition: 0.3s ease;
+	}
+
+	.navlink li a:hover {
+		color: white;
+		transition: 0.3s ease;
+
+	}
+
+	video {
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
+	td {
+		text-align: center;
+	}
+
+	.kosong {
+		width: 100%;
+		height: 300px;
+	}
+
+	.mid {
+		text-align: center;
+	}
+
+	@media(max-width: 700px){
+		.g1 {
+			width: 50%;
+		}
+		.g2 {
+			width: 50%;
+		}
+	}
+
+	@media(max-width: 1000px){
+		.container1 {
+			width: 100%;
+		}
+	}
+
+</style>
+	
+
+</head>
+<body>
+
+	<div class="bg"></div>
+
+	<div class="header">
+
+
+<nav>
+	<ul class="navlink">
+		<li><button><a href="index.html">Home</a></button></li>
+		<li><a href="utama.html">Fisika</a></li>
+		<li><a href="bio.html">Biologi</a></li>
+		<li><a href="kimia.html">Kimia</a></li>
+		<li><a href="mate.html">Matematika</a></li>
+		
+	</ul>
+</nav>
+
+	</div>
+
+	<div class="container">
+		<div class="container1">
+		<h1>Praktikum Fisika</h1><br>
+		<h2>Baterai Kentang</h2>
+		<br><br>
+		<img class="g1" src="1.jpg" alt="">
+		<br><br>
+
+		<h2 >Tujuan</h2><br>
+
+		<p class="mid">1. Mengidentifikasi energi listrik alternatif </p>
+		<br><br>
+		<h2>Alat & Bahan</h2><br><br>
+
+		<div class="kotakgambar">
+		<img class="gg" src="kentang.jpg" alt="">
+		<img class="gg" src="kabel.jpg" alt="">
+		<img class="gg" src="led.jpg" alt="">
+		<img class="gg" src="penjepit.jpg" alt="">
+		<img class="gg" src="koin.jfif" alt="">
+		<img class="gg" src="paku.jpg" alt="">
+		<img class="gg" src="air.jfif" alt="">
+		<img class="gg" src="wadah.jfif" alt="">
+		<img class="gg" src="gula.jpg" alt="">
+		<img class="gg" src="garam.jpg" alt="">
+		</div>
+		<br>
+		<p>- Kentang<br>
+		- Kabel atau Kawat<br>
+		- Lampu LED<br>
+		- Penjepit Buaya<br>
+		- Koin Tembaga & Paku<br>
+
+		</p> <br>
+
+		<br>
+
+		<br>
+		<h2>Langkah-Langkah</h2>
+		<br><br>
+		<img class="g1" src="rangkaian.jpeg"><br>
+		<p>1. Siapkan kentang, koin, dan paku <br>
+		   2. Sambungkan kabel ke penjepit buaya<br>
+		   3. Tusukkan koin tembaga dan paku ke dalam kentang<br>
+		   4. Jepit penjepit buaya ke paku, koin tembaga, dan lampu LED<br>
+		   5. Lihat nyala lampu yang terjadi<br></p>
+		   <br>
+
+		 <h2>Hasil</h2><br>
+
+		 </p><br>
+		 <video controls src="praktikum.mp4" type="video/mp4"></video>
+		 <br><br>
+		 <img class="g1" src="hasil.jpeg">
+		 	 
+		 <br>
+		 <h2>Pertanyaan & Kesimpulan</h2><br>
+		 <p>1. Jelaskan mengapa lampu bisa menyala / tidak menyala berdasarkan percobaan dan apa kesimpulan dari percobaan tersebut !</p><br>
+
+		 <p>Kentang mengandung gula, air, dan asam.  Jenis logam tertentu, terutama tembaga dan seng dapat bereaksi dengan kentang saat dimasukkan ke dalamnya.  
+		  </p><br>
+
+
+		<button><a href="index.html">Kembali</a></button>
+		</div>
+	</div>
+	<div class="kosong"></div>
+	
+	
+</body>
+</html>
